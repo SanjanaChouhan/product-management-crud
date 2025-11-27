@@ -19,15 +19,15 @@ What This Project Uses
 
 Features
 
-✔ Create, Update, Fetch & Soft Delete Products
-✔ Pagination & Sorting (Dynamic)
-✔ Input Validation using Jakarta Validation
-✔ Global Exception Handling
-✔ Basic Authentication with Role-Based Access
-✔ Clean, Layered Architecture
-✔ Swagger UI for API Documentation
-✔ MySQL Support
-✔ Standard API & Error Response Format
+    ✔ Create, Update, Fetch & Soft Delete Products
+    ✔ Pagination & Sorting (Dynamic)
+    ✔ Input Validation using Jakarta Validation
+    ✔ Global Exception Handling
+    ✔ Basic Authentication with Role-Based Access
+    ✔ Clean, Layered Architecture
+    ✔ Swagger UI for API Documentation
+    ✔ MySQL Support
+    ✔ Standard API & Error Response Format
 
 
 How It Works (Project Internals)
@@ -89,47 +89,51 @@ How It Works (Project Internals)
 Project Structure
 
 com.product.app
-├── config
-│   ├── CorsConfig.java
-│   └── SwaggerConfig.java
-│
-├── controller
-│   └── ProductController.java
-│
-├── exception
-│   ├── ResourceNotFoundException.java
-│   └── handler
-│       └── GlobalExceptionHandler.java
-│
-├── model
-│   └── Product.java
-│
-├── payload
-│   ├── request
-│   │   ├── ProductRequest.java
-│   │   └── PaginationRequest.java
-│   ├── response
-│       ├── ApiResponse.java
-│       ├── ErrorResponse.java
-│       ├── PaginatedResponse.java
-│       └── ProductResponse.java
-│
-├── repository
-│   └── IProductRepository.java
-│
-├── security
-│   ├── SecurityConfig.java
-│   ├── CustomAuthenticationEntryPoint.java
-│   └── CustomAccessDeniedHandler.java
-│
-├── service
-│   ├── IProductService.java
-│   └── impl
-│       └── ProductServiceImpl.java
-│
-└── util
-    ├── AppConstants.java
-    └── AppUtils.java
+    |
+    ├── config
+    │       ├── CorsConfig.java
+    │       └── SwaggerConfig.java
+    │
+    ├── controller
+    │       └── ProductController.java
+    │
+    ├── exception
+    │      ├── ResourceNotFoundException.java
+    |      |── BadRequestException.java
+    |      |── UnauthorizedException.java
+    |      |── AccessDenideException.java
+    │       └── handler
+    │           └── GlobalExceptionHandler.java
+    │
+    ├── model
+    │      └── Product.java
+    │
+    ├── payload
+    │       ├── request
+    │       │       ├── ProductRequest.java
+    │       │       └── PaginationRequest.java
+    │       ├── response
+    │               ├── ApiResponse.java
+    │               ├── ErrorResponse.java
+    │               ├── PaginatedResponse.java
+    │               └── ProductResponse.java
+    │
+    ├── repository
+    │       └── IProductRepository.java
+    │
+    ├── security
+    │       ├── SecurityConfig.java
+    │       ├── CustomAuthenticationEntryPoint.java
+    │       └── CustomAccessDeniedHandler.java
+    │
+    ├── service
+    │       ├── IProductService.java
+    │       └── impl
+    │           └── ProductServiceImpl.java
+    │
+    └── util
+            ├── AppConstants.java
+            └── AppUtils.java
 
 
 Authentication (Basic Auth)
