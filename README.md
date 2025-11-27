@@ -3,11 +3,10 @@ Product Management REST API
 A Spring Boot RESTful API for managing products with CRUD operations, soft deletion, pagination, sorting, validation, and Basic Authentication.
 This project demonstrates clean architecture, service layering, reusable utilities, centralized constants, and detailed API documentation with Swagger UI.
 
-A Spring Boot RESTful API for managing products with CRUD operations, soft deletion, pagination, sorting, validation, and Basic Authentication.
-This project demonstrates clean architecture, service layering, reusable utilities, centralized constants, and detailed API documentation with Swagger UI.
-
 What This Project Uses
+
     Core Technologies
+
         ✔ Java 17
         ✔ Spring Boot 3
         ✔ Spring Web
@@ -17,7 +16,9 @@ What This Project Uses
         ✔ Lombok
         ✔ Swagger
 
+
 Features
+
 ✔ Create, Update, Fetch & Soft Delete Products
 ✔ Pagination & Sorting (Dynamic)
 ✔ Input Validation using Jakarta Validation
@@ -30,19 +31,25 @@ Features
 
 
 How It Works (Project Internals)
+
     1️⃣ Product Entity
+
         ✔ Uses UUID ID generation
         ✔ Includes soft delete using isDeleted = false
         ✔ Mapped with JPA annotations
 
     2️⃣ Validation Layer
+
     Using @NotBlank, @Size, @DecimalMin, @NotNull:
+
         ✔ Ensures product name is 2–100 chars
         ✔ Price > 0
         ✔ Description max 500 chars
 
     3️⃣ Service Layer
+
     The ProductServiceImpl handles:
+
         ✔ Duplicate name validation
         ✔ Soft delete
         ✔ Pagination using a shared utility
@@ -50,13 +57,17 @@ How It Works (Project Internals)
         ✔ Centralized response building
 
     4️⃣ Pagination Logic
+
     PaginationRequest + AppUtils.buildPageableRequest() provide:
+
     ✔ Dynamic sorting
     ✔ Dynamic sort key validation
     ✔ Page number + page size handling
 
     5️⃣ Security Layer
+
     Using Basic Authentication with in-memory users:
+
         Username	Password	Role
         admin	    admin123	ADMIN
         user	    user123	    USER
@@ -64,8 +75,11 @@ How It Works (Project Internals)
         ✔ USER → read-only
         ✔ ADMIN → full CRUD
 
+
     6️⃣ Exception Handling
+
     Global exception handler returns:
+
         ✔ Standard error format
         ✔ Timestamp
         ✔ Status code + message
@@ -121,6 +135,7 @@ com.product.app
 Authentication (Basic Auth)
 
 Add Basic Auth before calling any API:
+
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 
@@ -132,6 +147,7 @@ Run the application → open browser:
 👉 http://localhost:8081/swagger-ui/index.html
 
 There you will see:
+
 ✔ All API endpoints
 ✔ Request bodies
 ✔ Responses
@@ -141,6 +157,7 @@ Swagger UI Screenshots Section
 ![alt text](image-3.png)
 
 Screenshots (Swagger UI + API Results)
+
 Swagger UI Overview:
 
 1. Create Product – Request & Response
@@ -165,6 +182,7 @@ Swagger UI Overview:
 
 
 Highlights
+
     ✔ Clean layered architecture
     ✔ Uses DTOs for request & response
     ✔ Centralized constants for messages
@@ -176,5 +194,7 @@ Highlights
 
 
 Author
+
 Sanjana Chouhan
+
 Java Backend Developer
