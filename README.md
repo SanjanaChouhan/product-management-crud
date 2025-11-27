@@ -141,27 +141,27 @@ Swagger UI Screenshots Section
 ![alt text](image-3.png)
 
 Screenshots (Swagger UI + API Results)
-    Swagger UI Overview:
+Swagger UI Overview:
 
-    1. Create Product – Request & Response
-        ![alt text](image-4.png)
-        ![alt text](image-5.png)
+1. Create Product – Request & Response
+![alt text](image-4.png)
+![alt text](image-5.png)
     
-    2. Get Product By ID
-        ![alt text](image-7.png)
-        ![alt text](image-8.png)
-        ![alt text](image-9.png)
+2. Get Product By ID
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
 
-    3. Pagination & Sorting Response
-        ![alt text](image-10.png)
-        ![alt text](image-11.png)
+3. Pagination & Sorting Response
+![alt text](image-10.png)
+![alt text](image-11.png)
     
-    4. Soft Delete Product
-        ![alt text](image-12.png)
+4. Soft Delete Product
+![alt text](image-12.png)
     
-    5. Update Product
-        ![alt text](image-13.png)
-        ![alt text](image-14.png)
+5. Update Product
+![alt text](image-13.png)
+![alt text](image-14.png)
 
 
 Highlights
