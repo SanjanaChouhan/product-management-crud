@@ -1,11 +1,11 @@
-**Product Management REST API**
+![project stucture](https://github.com/user-attachments/assets/d5144d70-5599-4635-90b7-fd1381ec7ff4)**Product Management REST API**
 
 A Spring Boot RESTful API for managing products with CRUD operations, soft deletion, pagination, sorting, validation, and Basic Authentication.
 This project demonstrates clean architecture, service layering, reusable utilities, centralized constants, and detailed API documentation with Swagger UI.
 
 **What This Project Uses**
 
-    Core Technologies
+    **Core Technologies**
 
         ✔ Java 17
         ✔ Spring Boot 3
@@ -32,23 +32,23 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **How It Works (Project Internals)**
 
-    1. Product Entity
+    **1. Product Entity**
 
         ✔ Uses UUID ID generation
         ✔ Includes soft delete using isDeleted = false
         ✔ Mapped with JPA annotations
 
-    2. Validation Layer
+    **2. Validation Layer**
 
-    Using @NotBlank, @Size, @DecimalMin, @NotNull:
+    **Using @NotBlank, @Size, @DecimalMin, @NotNull:**
 
         ✔ Ensures product name is 2–100 chars
         ✔ Price > 0
         ✔ Description max 500 chars
 
-    3. Service Layer
+   ** 3. Service Layer**
 
-    The ProductServiceImpl handles:
+    **The ProductServiceImpl handles:**
 
         ✔ Duplicate name validation
         ✔ Soft delete
@@ -56,19 +56,19 @@ This project demonstrates clean architecture, service layering, reusable utiliti
         ✔ Convert entity → DTO
         ✔ Centralized response building
 
-    4. Pagination Logic
+    **4. Pagination Logic**
 
-    PaginationRequest + AppUtils.buildPageableRequest() provide:
+    **PaginationRequest + AppUtils.buildPageableRequest() provide:**
 
         ✔ Dynamic sorting
         ✔ Dynamic sort key validation
         ✔ Page number + page size handling
 
-    5. Security Layer
+    **5. Security Layer**
 
-    Using Basic Authentication with in-memory users:
+   ** Using Basic Authentication with in-memory users:**
 
-        Username	Password	Role
+       ** Username	Password	Role**
         admin	    admin123	ADMIN
         user	    user123	    USER
         
@@ -76,9 +76,9 @@ This project demonstrates clean architecture, service layering, reusable utiliti
         ✔ ADMIN → full CRUD
 
 
-    6. Exception Handling
+    **6. Exception Handling**
     
-    Global exception handler returns:
+    **Global exception handler returns:**
 
         ✔ Standard error format
         ✔ Timestamp
@@ -88,6 +88,7 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **Project Structure**
 
+
 ![project stucture](https://github.com/user-attachments/assets/a47f9670-c57f-468a-895d-78b02ffc964a)
 
 
@@ -95,7 +96,7 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **Authentication (Basic Auth)**
 
-Add Basic Auth before calling any API:
+**Add Basic Auth before calling any API:**
 
 ![alt text](image-1.png)
 ![alt text](image-2.png)
@@ -104,9 +105,10 @@ Add Basic Auth before calling any API:
 
 **API Documentation (Swagger UI)**
 
-Run the application → open browser:
+**Run the application → open browser:**
 
 👉 http://localhost:8081/swagger-ui/index.html
+
 
 **There you will see:**
 
@@ -116,19 +118,23 @@ Run the application → open browser:
 ✔ Authorization button
 
 **Swagger UI Screenshots Section**
+
 ![alt text](image-3.png)
 
 **Screenshots (Swagger UI + API Results)**
 
 **Swagger UI Overview:**
 
-1. Create Product – Request & Response
+**1. Create Product – Request & Response**
+
    
 ![alt text](image-4.png)
 
 ![alt text](image-5.png)
+
     
-2. Get Product By ID
+**2. Get Product By ID**
+
    
 ![alt text](image-7.png)
 
@@ -136,17 +142,23 @@ Run the application → open browser:
 
 ![alt text](image-9.png)
 
-3. Pagination & Sorting Response
+
+**3. Pagination & Sorting Response**
+   
  
 ![alt text](image-10.png)
 
 ![alt text](image-11.png)
+
     
-4. Soft Delete Product
+**4. Soft Delete Product**
+
  
 ![alt text](image-12.png)
+
     
-5. Update Product
+**5. Update Product**
+
    
 ![alt text](image-13.png)
 
@@ -167,6 +179,6 @@ Run the application → open browser:
 
 **Author**
 
-Sanjana Chouhan
+**Sanjana Chouhan**
 
-Java Backend Developer
+**Java Backend Developer**
