@@ -32,13 +32,13 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **How It Works (Project Internals)**
 
-    1️⃣ Product Entity
+    1. Product Entity
 
         ✔ Uses UUID ID generation
         ✔ Includes soft delete using isDeleted = false
         ✔ Mapped with JPA annotations
 
-    2️⃣ Validation Layer
+    2. Validation Layer
 
     Using @NotBlank, @Size, @DecimalMin, @NotNull:
 
@@ -46,7 +46,7 @@ This project demonstrates clean architecture, service layering, reusable utiliti
         ✔ Price > 0
         ✔ Description max 500 chars
 
-    3️⃣ Service Layer
+    3. Service Layer
 
     The ProductServiceImpl handles:
 
@@ -56,15 +56,15 @@ This project demonstrates clean architecture, service layering, reusable utiliti
         ✔ Convert entity → DTO
         ✔ Centralized response building
 
-    4️⃣ Pagination Logic
+    4. Pagination Logic
 
     PaginationRequest + AppUtils.buildPageableRequest() provide:
 
-    ✔ Dynamic sorting
-    ✔ Dynamic sort key validation
-    ✔ Page number + page size handling
+        ✔ Dynamic sorting
+        ✔ Dynamic sort key validation
+        ✔ Page number + page size handling
 
-    5️⃣ Security Layer
+    5. Security Layer
 
     Using Basic Authentication with in-memory users:
 
@@ -76,8 +76,8 @@ This project demonstrates clean architecture, service layering, reusable utiliti
         ✔ ADMIN → full CRUD
 
 
-    6️⃣ Exception Handling
-
+    6. Exception Handling
+    
     Global exception handler returns:
 
         ✔ Standard error format
@@ -88,53 +88,8 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **Project Structure**
 
-com.product.app
-    |
-    ├── config
-    │       ├── CorsConfig.java
-    │       └── SwaggerConfig.java
-    │
-    ├── controller
-    │       └── ProductController.java
-    │
-    |
-    ├── exception
-    │      ├── ResourceNotFoundException.java
-    |      |── BadRequestException.java
-    |      |── UnauthorizedException.java
-    |      |── AccessDenideException.java
-    │       └── handler
-    │           └── GlobalExceptionHandler.java
-    │
-    ├── model
-    │      └── Product.java
-    │
-    ├── payload
-    │       ├── request
-    │       │       ├── ProductRequest.java
-    │       │       └── PaginationRequest.java
-    │       ├── response
-    │               ├── ApiResponse.java
-    │               ├── ErrorResponse.java
-    │               ├── PaginatedResponse.java
-    │               └── ProductResponse.java
-    │
-    ├── repository
-    │       └── IProductRepository.java
-    │
-    ├── security
-    │       ├── SecurityConfig.java
-    │       ├── CustomAuthenticationEntryPoint.java
-    │       └── CustomAccessDeniedHandler.java
-    │
-    ├── service
-    │       ├── IProductService.java
-    │       └── impl
-    │           └── ProductServiceImpl.java
-    │
-    └── util
-            ├── AppConstants.java
-            └── AppUtils.java
+![project stucture](https://github.com/user-attachments/assets/a47f9670-c57f-468a-895d-78b02ffc964a)
+
 
 
 
