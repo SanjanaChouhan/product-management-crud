@@ -1,9 +1,9 @@
-Product Management REST API
+**Product Management REST API**
 
 A Spring Boot RESTful API for managing products with CRUD operations, soft deletion, pagination, sorting, validation, and Basic Authentication.
 This project demonstrates clean architecture, service layering, reusable utilities, centralized constants, and detailed API documentation with Swagger UI.
 
-What This Project Uses
+**What This Project Uses**
 
     Core Technologies
 
@@ -17,7 +17,7 @@ What This Project Uses
         ✔ Swagger
 
 
-Features
+**Features**
 
     ✔ Create, Update, Fetch & Soft Delete Products
     ✔ Pagination & Sorting (Dynamic)
@@ -30,7 +30,7 @@ Features
     ✔ Standard API & Error Response Format
 
 
-How It Works (Project Internals)
+**How It Works (Project Internals)**
 
     1️⃣ Product Entity
 
@@ -86,7 +86,7 @@ How It Works (Project Internals)
         ✔ Project Structure
 
 
-Project Structure
+**Project Structure**
 
 com.product.app
     |
@@ -136,7 +136,8 @@ com.product.app
             └── AppUtils.java
 
 
-Authentication (Basic Auth)
+
+**Authentication (Basic Auth)**
 
 Add Basic Auth before calling any API:
 
@@ -145,47 +146,58 @@ Add Basic Auth before calling any API:
 
 
 
-API Documentation (Swagger UI)
+**API Documentation (Swagger UI)**
 
 Run the application → open browser:
+
 👉 http://localhost:8081/swagger-ui/index.html
 
-There you will see:
+**There you will see:**
 
 ✔ All API endpoints
 ✔ Request bodies
 ✔ Responses
 ✔ Authorization button
 
-Swagger UI Screenshots Section
+**Swagger UI Screenshots Section**
 ![alt text](image-3.png)
 
-Screenshots (Swagger UI + API Results)
+**Screenshots (Swagger UI + API Results)**
 
-Swagger UI Overview:
+**Swagger UI Overview:**
 
 1. Create Product – Request & Response
+   
 ![alt text](image-4.png)
+
 ![alt text](image-5.png)
     
 2. Get Product By ID
+   
 ![alt text](image-7.png)
+
 ![alt text](image-8.png)
+
 ![alt text](image-9.png)
 
 3. Pagination & Sorting Response
+ 
 ![alt text](image-10.png)
+
 ![alt text](image-11.png)
     
 4. Soft Delete Product
+ 
 ![alt text](image-12.png)
     
 5. Update Product
+   
 ![alt text](image-13.png)
+
 ![alt text](image-14.png)
 
 
-Highlights
+**Highlights**
 
     ✔ Clean layered architecture
     ✔ Uses DTOs for request & response
@@ -197,7 +209,7 @@ Highlights
     ✔ Fully documented using Swagger
 
 
-Author
+**Author**
 
 Sanjana Chouhan
 
