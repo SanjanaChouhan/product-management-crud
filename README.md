@@ -5,7 +5,7 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **What This Project Uses**
 
-    **Core Technologies**
+    Core Technologies
 
         ✔ Java 17
         ✔ Spring Boot 3
@@ -32,23 +32,23 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **How It Works (Project Internals)**
 
-    **1. Product Entity**
+    1. Product Entity
 
         ✔ Uses UUID ID generation
         ✔ Includes soft delete using isDeleted = false
         ✔ Mapped with JPA annotations
 
-    **2. Validation Layer**
+    2. Validation Layer
 
-    **Using @NotBlank, @Size, @DecimalMin, @NotNull:**
+    Using @NotBlank, @Size, @DecimalMin, @NotNull:
 
         ✔ Ensures product name is 2–100 chars
         ✔ Price > 0
         ✔ Description max 500 chars
 
-   ** 3. Service Layer**
+   3. Service Layer
 
-    **The ProductServiceImpl handles:**
+    The ProductServiceImpl handles:
 
         ✔ Duplicate name validation
         ✔ Soft delete
@@ -56,29 +56,29 @@ This project demonstrates clean architecture, service layering, reusable utiliti
         ✔ Convert entity → DTO
         ✔ Centralized response building
 
-    **4. Pagination Logic**
+    4. Pagination Logic
 
-    **PaginationRequest + AppUtils.buildPageableRequest() provide:**
+    PaginationRequest + AppUtils.buildPageableRequest() provide:
 
         ✔ Dynamic sorting
         ✔ Dynamic sort key validation
         ✔ Page number + page size handling
 
-    **5. Security Layer**
+    5. Security Layer
 
-   ** Using Basic Authentication with in-memory users:**
+   Using Basic Authentication with in-memory users:
 
-       ** Username	Password	Role**
-        admin	    admin123	ADMIN
-        user	    user123	    USER
+         Username	   Password	   Role
+         admin	      admin123	   ADMIN
+         user	      user123	   USER
         
         ✔ USER → read-only
         ✔ ADMIN → full CRUD
 
 
-    **6. Exception Handling**
+    6. Exception Handling
     
-    **Global exception handler returns:**
+    Global exception handler returns:
 
         ✔ Standard error format
         ✔ Timestamp
@@ -99,6 +99,7 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 **Add Basic Auth before calling any API:**
 
 ![alt text](image-1.png)
+
 ![alt text](image-2.png)
 
 
@@ -113,9 +114,13 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 **There you will see:**
 
 ✔ All API endpoints
+
 ✔ Request bodies
+
 ✔ Responses
+
 ✔ Authorization button
+
 
 **Swagger UI Screenshots Section**
 
