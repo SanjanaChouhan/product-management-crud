@@ -90,13 +90,19 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 com.product.app
     |
+    |
     ├── config
+    |
     │       ├── CorsConfig.java
+    |       |
     │       └── SwaggerConfig.java
     │
+    |
     ├── controller
+    |       |
     │       └── ProductController.java
     │
+    |
     ├── exception
     │      ├── ResourceNotFoundException.java
     |      |── BadRequestException.java
