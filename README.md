@@ -1,4 +1,4 @@
-![project stucture](https://github.com/user-attachments/assets/d5144d70-5599-4635-90b7-fd1381ec7ff4)**Product Management REST API**
+**Product Management REST API**
 
 A Spring Boot RESTful API for managing products with CRUD operations, soft deletion, pagination, sorting, validation, and Basic Authentication.
 This project demonstrates clean architecture, service layering, reusable utilities, centralized constants, and detailed API documentation with Swagger UI.
