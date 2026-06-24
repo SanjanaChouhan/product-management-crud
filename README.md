@@ -108,7 +108,7 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **Run the application → open browser:**
 
-👉 http://localhost:8081/swagger-ui/index.html
+http://localhost:8081/swagger-ui/index.html
 
 
 **There you will see:**
@@ -186,4 +186,4 @@ This project demonstrates clean architecture, service layering, reusable utiliti
 
 **Sanjana Chouhan**
 
-**Java Backend Developer**
+**Java Developer**
